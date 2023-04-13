@@ -164,5 +164,35 @@ h2{
     color: #333333;
 }
 
+footer{
+    padding: 69px 0 75px;
+    background: black;
+}
 
+footer .container{
+    max-width: 564px;
+}
 
+input, textarea{
+    display: block;
+    width: 100%;
+    font-size: 17px;
+    line-height: 22px;
+    color: white;
+    padding: 18px 30px;
+}
+
+input::placeholder, textarea::placeholder{
+    color: white;
+}
+
+input:nth-of-type(odd){
+    background: rgba(255, 255, 255, 0.18);
+}
+
+textarea{
+    resize: none;
+    height: 127px;
+}
+
+form
