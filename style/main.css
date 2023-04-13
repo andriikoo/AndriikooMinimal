@@ -137,11 +137,11 @@ h2{
 
 .sec-3 .frame-container{
     display: inline-flex;
-    margin: 0 250px 0;
-}
-
-.sec-3 .item{
-    margin: 0 10px 0;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 960px;
 }
 
 .sec-3 .frame-container h2{
