@@ -172,5 +172,121 @@ h2{
     color: #333333;
 }
 
+h3{
+    font-family: 'Montserrat';
+    margin: 79px 0 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+}
 
+.sec-4{
+    background: #F5F5F5;
+    padding: 10px;
+    text-align: center;
+}
 
+.sec-4 .line{
+    height: 2px;
+    margin: 28px auto 43px;
+    width: 80px;
+    background: rgba(0, 0, 0, 0.09);
+}
+
+.sec-4 .frame-container{
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 960px;
+}
+
+.sec-4 .frame-container h3{
+    margin: 19px 0 4px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.sec-4 .frame-container p{
+    font-family: 'Vollkorn';
+    max-width: 300px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0 0 21px;
+    color: #333333;
+}
+
+.sec-5{
+    padding: 10px;
+    text-align: center;
+}
+
+h4{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 36px;
+    text-align: center;
+    margin: 79px auto 0;
+    color: #333333;
+}
+
+.sec-5 .line{
+    height: 2px;
+    margin: 28px auto 43px;
+    width: 80px;
+    background: rgba(0, 0, 0, 0.09);
+}
+
+.sec-5 .frame-container{
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 960px;
+}
+
+.sec-5 .frame-container h4{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin: 20px 0 6px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.sec-5 .frame-container p{
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 0 18px;
+    color: #333333;
+}
+
+.sec-5 .frame-container .iconsoc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 100px;
+    gap: 10px;
+    max-width: 220px;
+    max-height: 35px;
+}
