@@ -1,4 +1,6 @@
 @import "reset.css";
+@import "hovers.css";
+@import "burger.css";
 
 body {
     font-weight: 400;
@@ -60,6 +62,7 @@ header nav a {
 
 header nav.d-flex {
     gap: 34px;
+    flex-direction: column;
 }
 
 .sec-1 {
@@ -265,7 +268,7 @@ h4{
     font-size: 16px;
     line-height: 20px;
     text-align: center;
-    margin: 20px 0 6px;
+    margin: 20px auto 6px;
     text-transform: uppercase;
     color: #333333;
 }
@@ -285,8 +288,180 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: 0 0 100px;
-    gap: 10px;
+    gap: 6px;
     max-width: 220px;
     max-height: 35px;
+}
+
+footer{
+    background: black;
+    padding: 69px 0 75px;
+    text-align: center;
+}
+
+footer .container{
+    max-width: 564px;
+}
+
+footer input,textarea{
+    display: block;
+    width: 100%;
+    padding: 18px 30px 17px;
+    font-size: 17px;
+    line-height: 22px;
+    font-style: italic;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+input::placeholder, textarea::placeholder{
+    color: white;
+}
+
+input:nth-of-type(odd){
+    background: rgba(255, 255, 255, 0.18);
+}
+
+textarea{
+    resize: none;
+    height: 125px;
+}
+
+form button{
+    margin: 20px auto 37px;
+    background: transparent;
+    border: 2px solid #7EC4BD;
+    border-bottom-width: 2px;
+    padding: 15px 34px 16px;
+    display: block;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: #8BCAC3;
+}
+
+footer p{
+    margin: 14px auto 0;
+}
+
+h5{
+    margin: 65px 0 24px;
+    font-family: 'Vollkorn';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px;
+    text-align: center;
+    color: #333333;
+}
+
+.sec-6{
+    text-align: center;
+    padding: 69px;
+    background: #F5F5F5;
+}
+
+.sec-6 .quote-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sec-6 .quote{
+    max-width: 340px;
+}
+
+.sec-6 p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ABABAB;
+    padding: 0 0 98px;
+}
+
+.sec-7 {
+    background-image: url("../img/backgorund2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 79px 0 100px;
+    color: #ffffff;
+    text-align: center;
+}
+
+h6{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 0 0 28px;
+    color: #333333;
+}
+
+.sec-7 .line{
+    height: 2px;
+    margin: 0 auto 59px;
+    background: rgba(0, 0, 0, 0.09);
+}
+
+.sec-7 .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 149px;
+
+    justify-content: center;
+}
+
+.sec-7 .container h6{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 26px auto 20px;
+    color: #333333;
+}
+
+.sec-7 .container p, span{
+    font-family: 'Vollkorn';
+    font-style: normal;
+    max-width: 178px;
+    font-size: 17px;
+    line-height: 22px;
+    margin: 0 auto;
+    color: #212121;
+}
+
+.sec-7 .container a{
+    margin: 0 auto 11px;
+}
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    footer .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    footer input, textarea {
+        padding: 12px 20px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    p, h1, h2, h3, h4, h5, h6{
+        padding: 10px;
+    }
 }
