@@ -1,5 +1,6 @@
 @import "reset.css";
 @import "hovers.css";
+@import "burger.css";
 
 body {
     font-weight: 400;
@@ -267,7 +268,7 @@ h4{
     font-size: 16px;
     line-height: 20px;
     text-align: center;
-    margin: 20px 0 6px;
+    margin: 20px auto 6px;
     text-transform: uppercase;
     color: #333333;
 }
@@ -287,8 +288,9 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: 0 0 100px;
-    gap: 10px;
+    gap: 6px;
     max-width: 220px;
     max-height: 35px;
 }
@@ -457,5 +459,9 @@ h6{
         padding: 12px 20px;
         font-size: 16px;
         line-height: 20px;
+    }
+
+    p, h1, h2, h3, h4, h5, h6{
+        padding: 10px;
     }
 }
