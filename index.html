@@ -25,6 +25,7 @@
         </div>
     </div>
 </header>
+
 <main>
     <section class="sec-1">
         <div class="container">
@@ -81,7 +82,7 @@
         <div class="line"></div>
         <div class="frame-container">
             <div class="item">
-                <img src="img/woods.png" alt="frame" height="300" width="300">
+                <img src="img/tiny/woods.png" alt="frame" height="300" width="300">
                 <div class="textbg">
                     <h3>WOODS</h3>
                     <p>Photography</p>
@@ -89,43 +90,43 @@
             </div>
 
             <div class="item">
-                <img src="img/path.png" alt="frame" height="300" width="300">
+                <img src="img/tiny/path.png" alt="frame" height="300" width="300">
                     <h3>PATH</h3>
                     <p>Website • Photography</p>
             </div>
 
             <div class="item">
-                <img src="img/darkness.png" alt="frame" height="300" width="300">
+                <img src="img/tiny/darkness.png" alt="frame" height="300" width="300">
                     <h3>DARKNESS</h3>
                     <p>Website</p>
             </div>
             <div class="item">
-                <img src="img/waves.png" alt="frame" height="300" width="300">
+                <img src="img/tiny/waves.png" alt="frame" height="300" width="300">
                     <h3>WAVES</h3>
                     <p>Photography</p>
             </div>
             <div class="item">
-                <img src="img/drops.png" alt="frame" height="300" width="300">
+                <img src="img/tiny/drops.png" alt="frame" height="300" width="300">
                     <h3>DROPS</h3>
                     <p>Website</p>
             </div>
             <div class="item">
-                <img src="img/ocean.png" alt="frame" height="300" width="300">
+                <img src="img/tiny/ocean.png" alt="frame" height="300" width="300">
                     <h3>OCEAN</h3>
                     <p>Website</p>
             </div>
             <div class="item">
-                <img src="img/town.png" alt="frame" height="300" width="300">
+                <img src="img/tiny/town.png" alt="frame" height="300" width="300">
                     <h3>TOWN</h3>
                     <p>Website</p>
             </div>
             <div class="item">
-                <img src="img/mountain.png" alt="frame" height="300" width="300">
+                <img src="img/tiny/mountain.png" alt="frame" height="300" width="300">
                     <h3>MOUNTAIN</h3>
                     <p>Website</p>
             </div>
             <div class="item">
-                <img src="img/camera.png" alt="frame" height="300" width="300">
+                <img src="img/tiny/camera.png" alt="frame" height="300" width="300">
                     <h3>CAMERA</h3>
                     <p>Website</p>
             </div>
@@ -240,7 +241,9 @@
     </section>
 
     <section class="sec-6">
-        <img src="img/quote.svg" alt="quote-logo">
+        <svg width="62" height="62">
+            <use href="img/all.svg#quote"/>
+        </svg>
         <div class="quote-container">
             <div class="quote">
                 <h5>“I love these guys! They did a great job. I would recommend them to anyone.”</h5>
@@ -267,53 +270,43 @@
                 </p>
             </div>
             <div class="mini">
-                <img src="img/point.png" alt="point">
+                <img src="img/mail.png" alt="point">
                 <h6>The traditional way</h6>
                 <p>
                     Email us <br> contact@minimal.com <br><br> Contact form <br> Scroll down
                 </p>
             </div>
             <div class="mini">
-                <img src="img/point.png" alt="point">
+                <img src="img/heart.png" alt="point">
                 <h6>Let’s get social</h6>
                     <a href="https://www.facebook.com/" target="_blank">
-                        <img src="img/facebook.svg" alt="facebook icon" width="14" height="14">
+                        <svg width="14" height="14">
+                            <use href="img/all.svg#facebook"/>
+                        </svg>
                         <span>Facebook</span>
                     </a>
                 <br>
                     <a href="https://twitter.com/" target="_blank">
-                        <img src="img/twitter.svg" alt="twitter icon" width="14" height="14">
+                        <svg width="14" height="14">
+                            <use href="img/all.svg#twitter"/>
+                        </svg>
                         <span>Twitter</span>
                     </a>
                 <br>
                     <a href="https://www.linkedin.com/" target="_blank">
-                        <img src="img/linkedin.svg" alt="linkedin icon" width="14" height="14">
+                        <svg width="14" height="14">
+                            <use href="img/all.svg#linkedin"/>
+                        </svg>
                         <span>LinkedIn</span>
                     </a>
             </div>
         </div>
     </section>
-
-    <script>
-        const anchors = document.querySelectorAll('a[href*="#"]')
-
-        for (let anchor of anchors) {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault()
-
-                const blockID = anchor.getAttribute('href').substr(1)
-
-                document.getElementById(blockID).scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                })
-            })
-        }
-    </script>
 </main>
+
 <footer id="contact">
     <div class="container">
-        <form action="#">
+        <form action="#contact">
             <input type="text" placeholder="Name">
             <input type="email" placeholder="Email">
             <input type="number" placeholder="Budget">
@@ -324,5 +317,22 @@
         <p>Minimal Template made in Webflow. All rights reserved.</p>
     </div>
 </footer>
+
+<script>
+    const anchors = document.querySelectorAll('a[href*="#"]')
+
+    for (let anchor of anchors) {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault()
+
+            const blockID = anchor.getAttribute('href').substr(1)
+
+            document.getElementById(blockID).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        })
+    }
+</script>
 </body>
 </html>

@@ -62,11 +62,11 @@ header nav a {
 
 header nav.d-flex {
     gap: 34px;
-    flex-direction: column;
+    flex-direction: inherit;
 }
 
 .sec-1 {
-    background-image: url("../img/bg-1.jpg");
+    background-image: url("../img/tiny/bg-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -387,7 +387,7 @@ h5{
 }
 
 .sec-7 {
-    background-image: url("../img/backgorund2.png");
+    background-image: url("../img/tiny/backgorund2.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -463,5 +463,11 @@ h6{
 
     p, h1, h2, h3, h4, h5, h6{
         padding: 10px;
+    }
+
+    header nav.d-flex {
+        gap: 10px;
+        flex-direction: column;
+        padding: 25px;
     }
 }

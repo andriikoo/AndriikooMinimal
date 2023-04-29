@@ -13,3 +13,18 @@
 .sec-5 .item img:hover {
     transform: scale(1.1);
 }
+
+header nav a:hover {
+    color: red;
+}
+
+button:hover{
+    color: white;
+    background: cornflowerblue;
+}
+
+footer button:hover{
+    color: white;
+    background: red;
+    border-color: darkred;
+}
